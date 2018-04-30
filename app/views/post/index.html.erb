@@ -1,4 +1,5 @@
 <% @boards.each do |board| %>
   <h1><%= board.title %></h1>
   <%= link_to '보기', "/show/#{board.id}" %>
+  <%= link_to '삭제', "/destroy/#{board.id}" %>
 <% end %>
